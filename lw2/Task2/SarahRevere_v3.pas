@@ -8,7 +8,7 @@ USES
 BEGIN {PaulRevere}
   WRITELN('Content-Type: text/plain');
   WRITELN;
-  GetEnv('QUERY_STRING') := SarahSays;
+  SarahSays := GetEnv('QUERY_STRING');
   IF SarahSays = 'lanterns=1'
   THEN
     WRITELN('The British are coming by land.')
